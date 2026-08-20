@@ -6,6 +6,8 @@ def calculate_spread(price_a, price_b):
 price_binance = 117250
 price_bybit = 117890
 
-spread = calculate_spread(price_binance, price_bybit)
+spread_binance_to_bybit = calculate_spread(price_binance, price_bybit)
+spread_bybit_to_binance = calculate_spread(price_bybit, price_binance)
 
-print(f"Spread: {spread:.3f}%")
+print(f"Binance → Bybit: {spread_binance_to_bybit:.3f}%")
+print(f"Bybit → Binance: {spread_bybit_to_binance:.3f}%")
